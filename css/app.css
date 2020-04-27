@@ -1,0 +1,55 @@
+@font-face{
+    font-family: "FIFA Welcome";
+    src: url("img/fonts/fifawelcome.ttf");
+}
+body{
+    background-color:#00206d ;
+  
+}
+.logo{ z-index: 0;}
+.navbar{ z-index: 1;    position: static; font-family: "FIFA Welcome"; font-size: 18px}
+.bg-light{
+    background: linear-gradient( #000000,#000000);
+    border-radius: 25px;
+}
+.nav-item{    padding: 0px 20px;}
+.nav-item:first-child{
+    border-right:#FFFFFF solid 1px;    
+}
+.zapatilla{
+    animation: zapatilla_animacion ease-in-out infinite 4s;
+}
+ul li {
+   list-style:none;
+}
+@keyframes zapatilla_animacion{
+    0%{ transform: translateY(-10%)}
+    50%{ transform: translateY(0%)}
+    100%{ transform: translateY(-10%)}
+}
+
+@media screen and (max-width: 600px) {
+       table {
+           width:100%;
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tr td:first-child {
+           background: #f0f0f0;
+           font-weight:bold;
+           font-size:1.3em;
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+       }
+}
